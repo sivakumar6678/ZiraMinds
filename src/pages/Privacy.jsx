@@ -1,27 +1,10 @@
-import React from 'react';
-
-const Privacy = () => {
+export default function Privacy() {
     return (
-        <div>
-            <h1>Privacy Policy</h1>
-            <p>Your privacy is important to us. This privacy statement explains the personal data our company processes, how our company processes it, and for what purposes.</p>
-            <h2>Information We Collect</h2>
-            <p>We collect information to provide better services to our users. We collect information in the following ways:</p>
-            <ul>
-                <li>Information you give us.</li>
-                <li>Information we get from your use of our services.</li>
-            </ul>
-            <h2>How We Use Information</h2>
-            <p>We use the information we collect in various ways, including to:</p>
-            <ul>
-                <li>Provide, operate, and maintain our services.</li>
-                <li>Improve, personalize, and expand our services.</li>
-                <li>Understand and analyze how you use our services.</li>
-            </ul>
-            <h2>Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us at privacy@ziraminds.com.</p>
-        </div>
+      <div className="min-h-screen bg-gray-900 text-white p-8">
+        <h1 className="text-4xl font-bold text-center">Privacy & Security</h1>
+        <p className="mt-4 text-lg text-center">
+          Your privacy is our top priority. We do not collect or store any unnecessary data.
+        </p>
+      </div>
     );
-};
-
-export default Privacy;
+  }

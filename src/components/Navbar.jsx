@@ -1,20 +1,11 @@
-import { Link } from 'react-router-dom';
-
-export default function Navbar() {
+export default function Navbar({ scrollToSection, homeRef, aboutRef, productsRef, contactRef, privacyRef }) {
   return (
-    <nav className="bg-gray-800 p-4 text-white">
-      <div className="container mx-auto flex justify-between">
-        <Link to="/" className="text-xl font-bold">
-          ZiraMinds AI
-        </Link>
-        <div className="space-x-4">
-          <Link to="/" className="hover:text-gray-400">Home</Link>
-          <Link to="/about" className="hover:text-gray-400">About</Link>
-          <Link to="/products" className="hover:text-gray-400">Products</Link>
-          <Link to="/privacy" className="hover:text-gray-400">Privacy</Link>
-          <Link to="/contact" className="hover:text-gray-400">Contact</Link>
-        </div>
-      </div>
+    <nav className="fixed top-0 left-0 w-full bg-gray-900 text-white p-4 flex justify-center gap-6 shadow-md z-50">
+      <button onClick={() => scrollToSection(homeRef)} className="px-4 py-2 hover:bg-gray-700 rounded">Home</button>
+      <button onClick={() => scrollToSection(aboutRef)} className="px-4 py-2 hover:bg-gray-700 rounded">About</button>
+      <button onClick={() => scrollToSection(productsRef)} className="px-4 py-2 hover:bg-gray-700 rounded">Products</button>
+      <button onClick={() => scrollToSection(privacyRef)} className="px-4 py-2 hover:bg-gray-700 rounded">Privacy</button>
+      <button onClick={() => scrollToSection(contactRef)} className="px-4 py-2 hover:bg-gray-700 rounded">Contact</button>
     </nav>
   );
 }
