@@ -24,19 +24,19 @@ export default function App() {
       <Navbar scrollToSection={scrollToSection} homeRef={homeRef} aboutRef={aboutRef} productsRef={productsRef} contactRef={contactRef} privacyRef={privacyRef} />
 
       {/* Sections */}
-      <div ref={homeRef} className="min-h-screen flex items-center justify-center bg-blue-500 text-white text-4xl font-bold">
+      <div ref={homeRef} className="min-h-screen  -center  text-4xl font-bold">
         <Home />
       </div>
-      <div ref={aboutRef} className="min-h-screen flex items-center justify-center bg-green-500 text-white text-4xl font-bold">
+      <div ref={aboutRef} className="min-h-screen  -center  text-4xl font-bold">
         <About />
       </div>
-      <div ref={productsRef} className="min-h-screen flex items-center justify-center bg-purple-500 text-white text-4xl font-bold">
+      <div ref={productsRef} className="min-h-screen  -center  text-4xl font-bold">
         <Products />
       </div>
-      <div ref={privacyRef} className="min-h-screen flex items-center justify-center bg-red-500 text-white text-4xl font-bold">
+      <div ref={privacyRef} className="min-h-screen  -center  text-4xl font-bold">
         <Privacy />
       </div>
-      <div ref={contactRef} className="min-h-screen flex items-center justify-center bg-yellow-500 text-white text-4xl font-bold">
+      <div ref={contactRef} className="min-h-screen  -center  text-4xl font-bold">
         <Contact />
       </div>
 
